@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="someId" class="SomeClass">
+        <property name="isolation">
+            <bean id="java.sql.Connection.TRANSACTION_SERIALIZABLE"
+                class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean" />
+        </property>
+    </bean>
+    <bean id="otherId" class="SomeClass">
+        Content
+    </bean>
+</beans>
